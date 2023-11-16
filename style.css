@@ -1,0 +1,23 @@
+body{
+	background-color: darkgreen;
+	
+
+}
+h1{
+	font-family: optima;
+	color: DeepSkyBlue;
+}
+
+h3{
+	font-family: Gill Sans;
+	font-size: 150%;
+	color: gold;
+}
+p{
+	font-family:Platino;
+	font-size: 90%;
+	color:indianred;
+	border:2px solid black;
+	margin: 50px;
+}
+	
