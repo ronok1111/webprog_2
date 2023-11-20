@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>Assignment11</title>
+		<style>
+		body{ background-color:rgb(55,107,128);
+		}
+		h1{ color:rgb(3,16,87);
+		}
+		</style>
+		<script language="javascript">
+		var n;
+		var i,k,rem,res,n1,sum;
+		</script>
+		</head>
+		<body align=center>
+			<h1>Number Checker</h1>
+			 <form>
+			  <br><br>
+			  <label> Enter a number :</label>
+			  <input type ="number" name="no" id="no"><BR><BR>
+			   <input type="button" onclick=check(this.form) value="SUBMIT">
+		    </form>
+			<script language="javascript">
+			function check(form)
+			{
+				n=parseInt(form.no.value);
+				if (n>0)
+				{
+					document.write("<h1> The number "+n+" is Positive</h1>");
+						d=0;
+						rem=0;
+						res=0;
+						i=n;
+						while(i>0)
+						
+						{
+						 d=d+1;
+						 i=parseInt(i/10);
+						}
+						i=n;
+						while(i>0)
+						{
+							rem=i%10;
+							res=res+Math.pow(rem,d);
+							i=parseInt(i/10);
+						}
+						if(n===res)
+						{
+							document.write("<h1> The number "+n+" is ARMSTRONG</h1>");
+							
+						}
+						else 
+						{
+						   document.write("<h1> The number "+n+" is not ARMSTRONG</h1>");
+						}
+						
+						sum=0;
+						for(k=1;k<n;k++)
+						{
+						   if(n%k==0)
+						   {
+							sum=parseInt(sum+k);
+						}
+						}
+						document.write("<h1> Sum of factors : "+sum+" </h1>");
+						if (n===sum)
+						{
+							document.write("<h1> The Number "+n+" is Perfect</h1>");
+						}
+						else 
+						{
+							document.write("<h1>The Number "+n+" is not Perfect</h1> ");
+						}
+						
+					}
+					else {
+					document.write("<h1> The number is negative</h1>");
+					}
+					}
+					</script>
+					</body>
+					</html>
+						
+						
+						
+						
+				        	
